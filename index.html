@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YSE TRADING - Devenez Promoteur & Partenaire</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom Fonts: Inter for Clean, Modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CONFIGURATION DU THÈME "CLEAN & TECHNIQUE" */
+        :root {
+            --color-primary: #00bcd4; /* Cyan / Turquoise Technique */
+            --color-secondary: #3b82f6; /* Bleu Vif */
+            --color-background: #0d1a2b; /* Bleu Nuit Profond */
+            --color-card: #1c2e4a; /* Bleu Foncé (Cartes) */
+            --color-text: #e2e8f0; /* Gris Très Clair */
+            --color-muted: #94a3b8; /* Gris Muted */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            scroll-behavior: smooth;
+        }
+
+        .section-padding {
+            padding: 96px 5% 96px 5%;
+            max-width: 1280px;
+            margin: auto;
+        }
+
+        .accent-text {
+            color: var(--color-primary);
+        }
+
+        .tech-card {
+            background-color: var(--color-card);
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-left: 4px solid transparent;
+            transition: border-left 0.3s ease, transform 0.3s ease;
+            padding: 2.5rem; /* Augmentation du padding interne */
+        }
+
+        .tech-card:hover {
+            border-left-color: var(--color-primary);
+            transform: translateY(-3px);
+        }
+
+        .cta-button {
+            background-color: var(--color-primary);
+            color: var(--color-background);
+            font-weight: 700;
+            padding: 12px 32px;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #00a4b7; /* Lighter Cyan on hover */
+            box-shadow: 0 6px 20px rgba(0, 188, 212, 0.3);
+        }
+
+        /* Amélioration de l'espacement dans les listes */
+        .feature-item {
+            display: grid;
+            grid-template-columns: 24px 1fr; /* Colonne pour l'icône (24px) et le texte */
+            gap: 1rem;
+            align-items: start;
+            margin-bottom: 1.5rem; /* Espace vertical plus grand entre les points clés */
+        }
+        
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER / NAVIGATION -->
+<header class="sticky top-0 z-50 bg-black/80 backdrop-blur-sm border-b border-gray-800">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-3xl font-extrabold tracking-tight">
+            <span class="text-white">YSE</span> <span class="accent-text">TRADING</span>
+        </div>
+        <ul class="flex space-x-6 text-sm font-medium text-gray-400">
+            <li><a href="#definition" class="hover:text-white transition duration-200">Le Projet</a></li>
+            <li><a href="#mecanisme" class="hover:text-white transition duration-200 font-bold accent-text">Preuve de Gain</a></li>
+            <li><a href="#simulateur" class="hover:text-white transition duration-200">Simulateur</a></li>
+            <li><a href="#partenariat" class="hover:text-white transition duration-200">Philosophie</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO SECTION - Profil du Fondateur -->
+<section class="section-padding min-h-[80vh] flex items-center justify-center text-center">
+    <div class="max-w-4xl">
+        <h1 class="text-6xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight">
+            DEVENEZ PROMOTEUR D'UN PROJET À <span class="accent-text">1M $ / MOIS</span>
+        </h1>
+        <p class="text-xl font-light text-gray-400 max-w-3xl mx-auto mb-8">
+            Je suis le développeur unique derrière YSE TRADING. Seul depuis <span class="font-bold accent-text">2022</span>, j'ai conçu et validé mes stratégies de trading automatisées, après plusieurs années d'expérience sur les marchés.
+        </p>
+        <p class="text-xl font-medium text-white max-w-3xl mx-auto mb-12 border-l-4 pl-4 border-primary italic">
+            Devenez promoteur gratuitement et touchez jusqu'à 30% des commissions d'affiliation en fonction du nombre de membres que vous attirez dès Juin 2026.
+        </p>
+        <div class="space-x-4">
+            <a href="#simulateur" class="cta-button">
+                Simuler mes Revenus Potentiels
+            </a>
+            <a href="#promoteurs" class="inline-block border border-gray-500 text-white font-medium py-3 px-8 rounded-full text-base hover:bg-gray-700 transition">
+                Devenir Promoteur
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 1. DÉFINITION DU PROJET & MODÈLE (AFFILIATION) -->
+<section id="definition" class="section-padding bg-gray-900/40 border-t border-b border-gray-800">
+    <h2 class="text-4xl font-bold mb-16 text-white text-center">YSE TRADING : Plateforme d'Affiliation & Signaux de Trading</h2>
+    
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <!-- Gauche: Explication du Bot et Stratégies -->
+        <div class="tech-card">
+            <h3 class="text-2xl font-semibold mb-6 border-b border-gray-700 pb-3 accent-text">Le Cœur Technique : Mon Bot Personnalisé</h3>
+            <p class="text-gray-300 mb-8">
+                Après 4 ans d'expérience en trading, j'ai développé <span class="font-bold">3 stratégies rentables</span> validées, notamment sur la paire BTCUSD. Pour garantir la précision d'exécution, j'ai codé un robot de trading automatisé capable de gérer ces systèmes.
+            </p>
+            <div class="space-y-4">
+                <div class="feature-item">
+                    <i class="fa-solid fa-code accent-text text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Développeur Unique</p>
+                        <p class="text-gray-400 text-sm">Je suis le seul architecte du code depuis 2022.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-chart-area accent-text text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Signaux de Trading</p>
+                        <p class="text-gray-400 text-sm">Les membres recevront des signaux via le bot pour dupliquer les trades.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-lock accent-text text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Détails Privés (Confidentiel)</p>
+                        <p class="text-gray-400 text-sm">Les stratégies, les indicateurs et le code restent <span class="font-bold">confidentiels</span>. Ils sont accessibles uniquement pour les promoteurs engagés.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Droite: Le Plan d'Acquisition & Affiliation -->
+        <div class="tech-card border-l-4 border-yellow-500">
+            <h3 class="text-2xl font-semibold mb-6 border-b border-gray-700 pb-3 text-yellow-500">Le Plan d'Échelle : Atteindre 10 000 Membres</h3>
+            <p class="text-gray-300 mb-8">
+                Le modèle est simple : un canal Telegram avec des signaux de trading et un système d'affiliation ouvert à tous.
+            </p>
+            <div class="space-y-4">
+                <div class="feature-item">
+                    <i class="fa-solid fa-users text-yellow-500 text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Cible d'Affiliation</p>
+                        <p class="text-gray-400 text-sm">10 000 membres, chacun s'inscrivant via lien d'affiliation (minimum 350 €).</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-handshake text-yellow-500 text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Revenu Généré</p>
+                        <p class="text-gray-400 text-sm">Commissions d'affiliation du broker sur le volume tradé (10-20%).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 2. MECANISME DE REVENU MINIMAL (1M $ PROUVÉ) -->
+<section id="mecanisme" class="section-padding">
+    <h2 class="text-4xl font-bold mb-16 text-white text-center">La Preuve Mathématique : 1M $ est le Seuil Minimal</h2>
+    
+    <div class="p-8 tech-card border-l-4 border-green-500">
+        <h3 class="text-2xl font-bold mb-8 text-green-500 border-b border-gray-700 pb-3">Détail du Calcul de la Commission Mensuelle Minimal :</h3>
+        
+        <div class="grid md:grid-cols-4 gap-8 text-center mb-10">
+            <div class="bg-[#0d1a2b] p-6 rounded-lg">
+                <p class="text-4xl font-extrabold accent-text">10 000</p>
+                <p class="text-sm text-gray-400 mt-2">Membres Ciblés</p>
+            </div>
+            <div class="bg-[#0d1a2b] p-6 rounded-lg">
+                <p class="text-4xl font-extrabold accent-text">5</p>
+                <p class="text-sm text-gray-400 mt-2">Trades Journaliers (Minimum)</p>
+            </div>
+            <div class="bg-[#0d1a2b] p-6 rounded-lg">
+                <p class="text-4xl font-extrabold accent-text">22</p>
+                <p class="text-sm text-gray-400 mt-2">Jours de Trading / Mois</p>
+            </div>
+            <div class="bg-[#0d1a2b] p-6 rounded-lg">
+                <p class="text-4xl font-extrabold accent-text">$1</p>
+                <p class="text-sm text-gray-400 mt-2">Commission / Trade / Personne (Minimum)</p>
+            </div>
+        </div>
+
+        <div class="bg-[#0d1a2b] p-8 rounded-lg border-2 border-green-500/50">
+            <p class="text-xl font-bold mb-4 text-white">Le Calcul (Hypothèse la Plus Conservatrice) :</p>
+            <p class="text-3xl font-extrabold text-green-500 text-center py-4">
+                (10 000 membres) × (5 trades/jour) × (22 jours/mois) × ($1 commission/trade)
+            </p>
+            <div class="h-0.5 bg-gray-700 my-6"></div>
+            <p class="text-5xl font-extrabold text-white text-center">
+                REVENU BRUT MENSUEL MINIMAL = <span class="accent-text">$1,100,000</span>
+            </p>
+        </div>
+        
+        <p class="mt-8 text-lg text-gray-400 italic">
+            C'est pourquoi $1,100,000 représente notre <span class="font-bold">seuil de revenu le plus bas</span>. La commission moyenne sera vraisemblablement supérieure à 1 $ par trade, ce qui augmentera directement le revenu net.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- 3. SIMULATEUR DE REVENU POUR PROMOTEURS -->
+<section id="simulateur" class="section-padding bg-gray-900/40 border-t border-b border-gray-800">
+    <h2 class="text-4xl font-bold mb-16 text-white text-center">Simulez Votre Part de Revenu en Tant que Promoteur (Dès Juin 2026)</h2>
+
+    <div class="tech-card border-l-4 border-primary grid lg:grid-cols-2 gap-10">
+        <!-- Gauche: Outil de Simulation -->
+        <div>
+            <h3 class="text-2xl font-semibold mb-4 accent-text">Calcul de Vos Gains</h3>
+            <p class="text-gray-400 mb-6">
+                Les promoteurs partagent <span class="font-bold">30% du revenu net (environ $300,000 / mois)</span> basé sur le nombre de membres attirés. Entrez le nombre de personnes que vous ramenez pour estimer votre part (sur 10 000 membres totaux).
+            </p>
+            
+            <div class="mb-8">
+                <label for="peopleBrought" class="block text-sm font-medium text-white mb-2">Nombre de Personnes que Vous Ramenez</label>
+                <input type="number" id="peopleBrought" value="500" min="1" max="10000" oninput="calculateReturns()" 
+                       class="w-full p-4 rounded-lg bg-[#0d1a2b] border border-gray-700 text-white text-xl focus:border-primary focus:ring-primary"
+                       placeholder="Ex: 500">
+            </div>
+
+            <!-- Résultats de la simulation -->
+            <div class="bg-[#0d1a2b] p-6 rounded-lg space-y-4">
+                <div class="flex justify-between items-center border-b border-gray-700 pb-2">
+                    <span class="text-gray-400 font-medium">Votre Pourcentage du Canal (10k Membres) :</span>
+                    <span id="percentageShare" class="text-xl font-bold accent-text">5 %</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-white text-lg font-semibold">REVENU MENSUEL ESTIMÉ (USD) :</span>
+                    <span id="estimatedReturn" class="text-3xl font-extrabold text-green-500">$15,000</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Droite: Infos sur la Transparence -->
+        <div class="flex flex-col justify-center items-center p-6 bg-[#0d1a2b] rounded-lg border border-cyan-500/50">
+            <i class="fa-solid fa-chart-line text-6xl text-cyan-500 mb-6"></i>
+            <h3 class="text-2xl font-semibold mb-3 text-cyan-400 text-center">Transparence des Gains</h3>
+            <p class="text-center text-gray-400 mb-6">
+                Le classement et les paiements sont publiés publiquement chaque mois via Google Sheet ou bot Telegram.
+            </p>
+            <a href="#contact" class="cta-button bg-cyan-600 hover:bg-cyan-700 flex items-center">
+                <i class="fa-solid fa-info-circle mr-3"></i> Plus d'Infos
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 4. PHILOSOPHIE DE PARTENARIAT ET TRANSPARENCE -->
+<section id="partenariat" class="section-padding">
+    <h2 class="text-4xl font-bold mb-16 text-white text-center">Notre Promesse : Collaboration et Transparence</h2>
+    
+    <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Rôle du Promoteur -->
+        <div class="tech-card border-l-4 border-blue-500">
+            <i class="fa-solid fa-handshake text-3xl text-blue-500 mb-5"></i>
+            <h3 class="text-2xl font-semibold mb-4">Le Promoteur : Partenaire Actif</h3>
+            <p class="text-gray-400 mb-6">
+                Je crois que la clé d'un succès durable réside dans la <span class="font-bold">collaboration</span>. En tant que promoteur, vous êtes un partenaire clé.
+            </p>
+            <div class="space-y-4">
+                <div class="feature-item">
+                    <i class="fa-solid fa-share-nodes text-blue-500 text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Transparence Absolue</p>
+                        <p class="text-gray-400 text-sm">Chaque décision majeure sera partagée dans le groupe privé (règles, redistribution).</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-comments text-blue-500 text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Co-décision</p>
+                        <p class="text-gray-400 text-sm">Les promoteurs ont leur mot à dire sur les décisions importantes.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-calendar-check text-red-500 text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Début des Gains</p>
+                        <p class="text-gray-400 text-sm">Les gains des promoteurs commencent en <span class="font-bold">Juin 2026</span>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sécurité et Infos Importantes -->
+        <div class="tech-card border-l-4 border-yellow-500">
+            <i class="fa-solid fa-check-shield text-3xl text-yellow-500 mb-5"></i>
+            <h3 class="text-2xl font-semibold mb-4">Infos Importantes pour les Promoteurs</h3>
+            <p class="text-gray-400 mb-6">
+                Avant de rejoindre, comprenez que les gains proviennent des commissions une fois le canal actif.
+            </p>
+            <div class="bg-[#0d1a2b] p-6 rounded-lg border border-yellow-500/50">
+                <p class="text-white font-bold mb-3">Pas de Gains Avant Juin 2026 :</p>
+                <p class="text-base text-gray-300">
+                    Préparez votre contenu maintenant pour toucher une plus grande part des 30% dès le lancement.
+                </p>
+            </div>
+            <p class="text-sm text-gray-500 mt-6 italic">
+                C'est le moment de prendre de l'avance pour maximiser vos revenus.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. PARTICIPER COMME PROMOTEUR OU TRADER -->
+<section id="promoteurs" class="section-padding">
+    <h2 class="text-4xl font-bold mb-16 text-white text-center">Participez et Gagnez : Promoteurs & Traders</h2>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Rôle des Promoteurs -->
+        <div class="tech-card border-l-4 border-red-400">
+            <i class="fa-solid fa-bullhorn text-3xl text-red-400 mb-5"></i>
+            <h3 class="text-2xl font-semibold mb-4">Option A : Devenir Promoteur (Gratuit)</h3>
+            <p class="text-gray-400 mb-6">
+                Attirez des membres via vos réseaux et touchez une part des 30% des commissions.
+            </p>
+            <div class="space-y-4">
+                <div class="feature-item">
+                    <i class="fa-solid fa-video text-red-400 text-xl"></i>
+                    <div>
+                        <p class="font-bold text-white mb-1">Mission de Promotion</p>
+                        <p class="text-gray-400 text-sm">Vidéos TikTok, Reels, Shorts, posts X/Twitter pour attirer du trafic.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-percent text-red-400 text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Votre Part</p>
+                        <p class="text-gray-400 text-sm">Proportionnelle au nombre de membres attirés (ex: 500 = $15k/mois).</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-timeline text-red-400 text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Objectif</p>
+                        <p class="text-gray-400 text-sm">4-5 vidéos/semaine pour des milliers d'euros/mois.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rôle des Traders (Affiliés) -->
+        <div class="tech-card border-l-4 border-cyan-400">
+            <i class="fa-solid fa-copy text-3xl text-cyan-400 mb-5"></i>
+            <h3 class="text-2xl font-semibold mb-4">Option B : Devenir Trader (Affilié)</h3>
+            <p class="text-gray-400 mb-6">
+                Rejoignez le canal pour utiliser le robot et profiter des signaux.
+            </p>
+            <div class="space-y-4">
+                <div class="feature-item">
+                    <i class="fa-solid fa-plug text-cyan-400 text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Fonctionnement</p>
+                        <p class="text-gray-400 text-sm">Inscrivez-vous via lien (min 350 €), connectez au bot.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-chart-line text-cyan-400 text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Bénéfices</p>
+                        <p class="text-gray-400 text-sm">Gains directs sur vos trades (winrate ~80%).</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-brands fa-telegram text-cyan-400 text-xl"></i> 
+                    <div>
+                        <p class="font-bold text-white mb-1">Contact</p>
+                        <p class="text-gray-400 text-sm">Contactez-moi sur Telegram pour rejoindre.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 6. CONTACT FINAL -->
+<section id="contact" class="section-padding text-center bg-gray-900/40 border-t border-gray-800">
+    <h2 class="text-4xl font-extrabold mb-6 text-white">Prochaine Étape : Contact Privé et Confidentialité</h2>
+    <p class="text-xl text-gray-400 mb-10 max-w-3xl mx-auto">
+        Que vous souhaitiez devenir promoteur ou trader, toutes les démarches se font en privé pour garantir la discrétion.
+    </p>
+    
+    <div class="inline-flex flex-col items-center p-10 tech-card border-l-4 border-primary">
+        <i class="fa-brands fa-telegram text-5xl accent-text mb-6"></i>
+        <p class="text-lg font-semibold text-white mb-3">Contactez-moi directement sur Telegram :</p>
+        <a href="https://t.me/ysestp" target="_blank" class="text-3xl font-bold underline hover:text-white transition duration-200 accent-text">
+            @ysestp
+        </a>
+        <p class="text-sm text-gray-500 mt-6">Pour votre lien d'affiliation personnel, rejoindre le groupe des promoteurs, ou voir les preuves de performance.</p>
+    </div>
+
+    <div class="mt-16 text-sm text-gray-600">
+        YSE TRADING - <span class="font-bold">Lancement : Juin 2026</span>
+    </div>
+</section>
+
+
+<script>
+    /**
+     * JavaScript pour le simulateur de gains pour promoteurs
+     */
+    
+    // Constantes basées sur la structure du projet
+    const TOTAL_MEMBERS = 10000;
+    const PROMOTER_POOL_PERCENT = 0.30; // 30%
+    // Le revenu net mensuel projeté est le point clé du projet (le MINIMUM garanti).
+    const PROJECTED_NET_REVENUE_USD = 1000000; // $1M (conservateur, basé sur pdf)
+    
+    // Calcul du pool total des promoteurs en USD
+    const PROMOTER_POOL_USD = PROJECTED_NET_REVENUE_USD * PROMOTER_POOL_PERCENT; // $300,000
+
+    /**
+     * Calcule le pourcentage de part et le rendement mensuel estimé.
+     */
+    function calculateReturns() {
+        const inputElement = document.getElementById('peopleBrought');
+        // Vérifie si l'élément input existe
+        if (!inputElement) return; 
+
+        const percentageElement = document.getElementById('percentageShare');
+        const returnElement = document.getElementById('estimatedReturn');
+
+        // Récupérer la valeur et s'assurer qu'elle est un nombre
+        let people = parseFloat(inputElement.value);
+
+        // Validation simple des limites
+        if (isNaN(people) || people < 1) {
+            people = 0;
+            // Si l'utilisateur efface tout, la valeur de l'input est 0
+        }
+        
+        // Capping au total des membres pour le calcul
+        people = Math.min(people, TOTAL_MEMBERS);
+        // Mettre à jour la valeur de l'input si elle dépasse la limite
+        inputElement.value = people;
+
+
+        // 1. Calcul du pourcentage détenu dans le canal (10k membres)
+        const percentage = (people / TOTAL_MEMBERS); 
+        
+        // 2. Calcul du gain mensuel estimé (Part dans le Pool de $300,000)
+        const estimatedReturnUSD = percentage * PROMOTER_POOL_USD;
+
+        // Mise à jour de l'affichage du pourcentage
+        const percentageDisplay = (percentage * 100).toFixed(2);
+        percentageElement.textContent = `${percentageDisplay} %`;
+        
+        // Mise à jour de l'affichage du gain (Formatage en USD sans décimales)
+        // Utilisation de Intl.NumberFormat pour un affichage propre des montants
+        const returnDisplay = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(estimatedReturnUSD);
+        returnElement.textContent = returnDisplay;
+        
+        // Style de mise en évidence (Optionnel : pour de gros montants)
+        if (estimatedReturnUSD > 50000) {
+            returnElement.classList.remove('text-green-500');
+            returnElement.classList.add('text-cyan-400');
+        } else {
+            returnElement.classList.remove('text-cyan-400');
+            returnElement.classList.add('text-green-500');
+        }
+    }
+
+    // Exécuter le calcul au chargement initial
+    window.onload = function() {
+        const inputElement = document.getElementById('peopleBrought');
+        if (inputElement) {
+            // Définir une valeur par défaut et lancer le calcul
+            inputElement.value = 500;
+            calculateReturns();
+        }
+    };
+
+</script>
+</body>
+</html>
